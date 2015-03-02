@@ -1,0 +1,11 @@
+   <source>
+      type appdynamics       # required, chossing the input plugin.
+      endpoint       # Optional. 
+      interval            # frequency to pull data
+      readOnly # True or false. This is to control the deletion of message after it is read
+      # Add any more parameters here
+    </source>
+
+    <match alert.appdynamics>
+      type stdout
+    </match>

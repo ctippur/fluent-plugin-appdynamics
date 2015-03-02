@@ -1,0 +1,300 @@
+
+plugin=$1
+USAGE="USAGE: $0 plugin"
+if [ -z "$plugin" ]; then
+	echo $USAGE
+	exit
+fi
+
+mkdir -p lib/fluent/plugin sample test/plugin 
+
+currdate=`date +"%Y-%m-%d"`
+
+cat >README <<EOF
+# Fluent::Plugin::$plugin
+
+fluent-plugin-$plugin is an input plug-in for [Fluentd](http://fluentd.org)
+
+## Installation
+
+These instructions assume you already have fluentd installed. 
+If you don't, please run through [quick start for fluentd] (https://github.com/fluent/fluentd#quick-start)
+
+Now after you have fluentd installed you can follow either of the steps below:
+
+Add this line to your application's Gemfile:
+
+    gem 'fluent-plugin-$plugin'
+
+Or install it yourself as:
+
+    $ gem install fluent-plugin-$plugin
+
+## Usage
+Add the following into your fluentd config.
+
+    <source>
+      type $plugin       # required, chossing the input plugin.
+      endpoint       # Optional. 
+      projectId # Needed for Ironio
+      token # Needed for Ironio
+      endpointQueue # Needed for Ironio
+      endpointType # Example ironio, kinesis
+      oauthId            # authorization key
+      interval            # frequency to pull data
+      readOnly # True or false to control deletion of message after it is read
+    </source>
+
+    <match alert.$plugin>
+      type stdout
+    </match>
+
+Now startup fluentd
+
+    $ sudo fluentd -c fluent.conf &
+    
+Send a test trap using net-snmp tools
+    
+    $ cd test; rvmsudo ./ironmq.rb 
+  
+## To Do
+    1. Change the logic to do a get all call so we process a bunch of alerts at a time.
+    2. Make delete configurable
+EOF
+
+cat >README.md <<EOF
+# Fluent::Plugin::$plugin
+
+fluent-plugin-$plugin is an input plug-in for [Fluentd](http://fluentd.org)
+
+## Installation
+
+These instructions assume you already have fluentd installed. 
+If you don't, please run through [quick start for fluentd] (https://github.com/fluent/fluentd#quick-start)
+
+Now after you have fluentd installed you can follow either of the steps below:
+
+Add this line to your application's Gemfile:
+
+    gem 'fluent-plugin-$plugin'
+
+Or install it yourself as:
+
+    $ gem install fluent-plugin-$plugin
+
+## Usage
+Add the following into your fluentd config.
+
+    <source>
+      type $plugin       # required, chossing the input plugin.
+      endpoint       # Optional. 
+      projectId # Needed for Ironio
+      token # Needed for Ironio
+      endpointQueue # Needed for Ironio
+      endpointType # Example ironio, kinesis
+      oauthId            # authorization key
+      interval            # frequency to pull data
+      readOnly # True or false to control deletion of message after it is read
+    </source>
+
+    <match alert.$plugin>
+      type stdout
+    </match>
+
+Now startup fluentd
+
+    $ sudo fluentd -c fluent.conf &
+    
+Send a test trap using net-snmp tools
+    
+    $ cd test; rvmsudo ./ironmq.rb 
+  
+## To Do
+    1. Change the logic to do a get all call so we process a bunch of alerts at a time.
+    2. Make delete configurable
+EOF
+
+
+cat > fluent-plugin-$plugin.gemspec <<EOF
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+
+Gem::Specification.new do |gem|
+  gem.name          = "fluent-plugin-$plugin"
+  gem.version       = "0.0.1"
+  gem.date          = '$currdate'
+  gem.authors       = ["chandrashekar Tippur"]
+  gem.email         = ["ctippur@gmail.com"]
+  gem.summary       = %q{Fluentd input plugin for $plugin alerts}
+  gem.description   = %q{FLuentd plugin for $plugin alerts... WIP}
+  gem.homepage      = 'https://github.com/Bigel0w/fluent-plugin-$plugin'
+  gem.license       = 'MIT'
+
+  gem.files         = `git ls-files`.split($\)
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.require_paths = ["lib"]
+  # Add GEM dependencies below
+  # For Example: gem.add_development_dependency "rake", '~> 0.9', '>= 0.9.6'
+end
+EOF
+
+cat >Gemfile <<EOF
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in fluent-plugin-snmp.gemspec
+gemspec
+EOF
+
+
+# Create files
+
+cat >lib/fluent/plugin/in_${plugin}.rb <<EOF
+module Fluent
+
+# Read  trap messages as events in to fluentd
+  class NewRelicInput < Input
+    Fluent::Plugin.register_input('newrelic', self)
+
+    # Define default configurations
+    # Example: config_param :tag, :string, :default => "alert.newrelic"
+    config_param :interval, :string, :default => "5"
+    config_param :tag, :string, :default => "alert.$plugin"
+    config_param :endpoint, :string, :default => "" # Optional
+   
+
+
+    # Initialize and bring in dependencies
+    def initialize
+      super
+      require 'json'
+      require 'daemons'
+      require 'pp'
+      # Add any other dependencies
+    end # def initialize
+
+    # Load internal and external configs
+    def configure(conf)
+      super
+      @conf = conf
+      # TO DO Add code to choke if config parameters are not there
+    end # def configure
+    
+    def start
+      super
+      @loop = Coolio::Loop.new
+      timer_trigger = TimerWatcher.new(@interval, true, &method(:input))
+      timer_trigger.attach(@loop)
+      @thread = Thread.new(&method(:run))
+      $log.info "starting $plugin poller, interval #{@interval}"
+    end
+
+    # Stop Listener and cleanup any open connections.
+    def shutdown
+      super
+      @loop.stop
+      @thread.join
+    end
+
+    def run
+      @loop.run
+      $log.info "Running $plugin Input"
+    end
+
+    # Start $plugin Trap listener
+    # Add the code to run this
+    def input
+    end # def Input
+
+  end # End Input class
+
+  class TimerWatcher < Coolio::TimerWatcher
+	def initialize(interval, repeat, &callback)
+	  @callback = callback
+	  super(interval, repeat)
+	end
+
+	def on_timer
+	  @callback.call
+	end
+  end
+
+end # module Fluent
+EOF
+
+
+cat >sample/snmp.conf.sample <<EOF
+   <source>
+      type $plugin       # required, chossing the input plugin.
+      endpoint       # Optional. 
+      interval            # frequency to pull data
+      readOnly # True or false. This is to control the deletion of message after it is read
+      # Add any more parameters here
+    </source>
+
+    <match alert.$plugin>
+      type stdout
+    </match>
+EOF
+
+
+cat >test/helper.rb <<EOF
+require 'rubygems'
+require 'bundler'
+begin
+  Bundler.setup(:default, :development)
+rescue Bundler::BundlerError => e
+  $stderr.puts e.message
+  $stderr.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
+require 'test/unit'
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'fluent/test'
+unless ENV.has_key?('VERBOSE')
+  nulllogger = Object.new
+  nulllogger.instance_eval {|obj|
+    def method_missing(method, *args)
+      # pass
+    end
+  }
+  $log = nulllogger
+end
+
+require 'fluent/plugin/in_$plugin'
+
+class Test::Unit::TestCase
+end
+EOF
+
+
+cat >test/plugin/test_in_${plugin}.rb <<EOF
+require 'helper'
+
+class ${plugin}TrapInputTest < Test::Unit::TestCase
+  def setup
+    Fluent::Test.setup
+  end
+  
+  # Add config here
+  CONFIG = %[
+    # Example hostt 0
+    # Example port 1062
+    # Example tag alert.snmptrap
+  ]
+
+  def create_driver(conf=CONFIG)
+    Fluent::Test::InputTestDriver.new(Fluent::${plugin}TrapInput).configure(conf)
+  end
+
+  # Configure the test
+  def test_configure
+    d = create_driver('')
+    # Example assert_equal "0".to_i, d.instance.host
+    # Example assert_equal "1062".to_i, d.instance.port
+    # Example assert_equal 'alert.snmptrap', d.instance.tag
+  end
+end
+EOF

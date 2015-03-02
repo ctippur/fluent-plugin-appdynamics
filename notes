@@ -1,0 +1,14 @@
+git config --global user.name "Chandrashekar Tippur"
+git config --global user.email "chandrashekar_tippur@intuit.com"
+
+cd fluent-plugin-appdynamics
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@gitlab.corp.intuit.net:ioc-tools/fluent-plugin-appdynamics.git
+git push -u origin master
+
+cd existing_git_repo
+git remote add origin git@gitlab.corp.intuit.net:ioc-tools/fluent-plugin-appdynamics.git
+git push -u origin master
