@@ -1,0 +1,2228 @@
+{
+  "host_name": "blitzio.saas.appdynamics.com",
+  "account_name": "blitzio",
+  "user_name": "blitzio",
+  "password": "5729f1258dca",
+  "applications": [
+    {
+      "application_name": "BlitzAppDynamicsServer",
+      "application_id": 1049,
+      "nodes": [
+        {
+          "id": 99190,
+          "name": "Machine",
+          "type": "Other",
+          "tierId": 4570,
+          "tierName": "Tier1",
+          "machineId": 28259,
+          "machineName": "ip-10-190-239-43",
+          "machineOSType": "Linux",
+          "ipAddresses": null,
+          "machineAgentPresent": true,
+          "machineAgentVersion": "Machine Agent v3.7.12.0 GA Build Date 2013-11-25 16:20:05",
+          "appAgentPresent": false,
+          "appAgentVersion": "",
+          "nodeUniqueLocalId": ""
+        },
+        {
+          "id": 99208,
+          "name": "Application",
+          "type": "Other",
+          "tierId": 4570,
+          "tierName": "Tier1",
+          "machineId": 28273,
+          "machineName": "ip-10-190-239-43.ec2.internal",
+          "machineOSType": "Linux",
+          "ipAddresses": {
+            "ipAddresses": [
+              "10.190.239.43"
+            ]
+          },
+          "machineAgentPresent": false,
+          "machineAgentVersion": "",
+          "appAgentPresent": true,
+          "appAgentVersion": "Server Agent v3.7.12.0 GA #2013-11-25_16-18-41 r${env.SVN_REVISION} 587-3.7.12",
+          "nodeUniqueLocalId": ""
+        }
+      ],
+      "metrics": [
+        {
+          "name": "End User Experience",
+          "type": "folder",
+          "metrics": [
+
+          ]
+        },
+        {
+          "name": "Business Transaction Performance",
+          "type": "folder",
+          "metrics": [
+            {
+              "name": "Business Transactions",
+              "type": "folder",
+              "metrics": [
+                {
+                  "name": "Tier1",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "/RESTfulDemoApplication/user-management",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Average Response Time (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Calls per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Errors per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Slow Calls",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Very Slow Calls",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Stall Count",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Average CPU Used (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Average Block Time (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Average Wait Time (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Normal Average Response Time (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Average Request Size",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Individual Nodes",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Application",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Average Response Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Calls per Minute",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Errors per Minute",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Slow Calls",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Very Slow Calls",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Stall Count",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average CPU Used (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average Block Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average Wait Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Normal Average Response Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average Request Size",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Machine",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Average Response Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Calls per Minute",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Errors per Minute",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Slow Calls",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Very Slow Calls",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Stall Count",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average CPU Used (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average Block Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average Wait Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Normal Average Response Time (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Average Request Size",
+                                  "type": "leaf"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Business Transaction Groups",
+              "type": "folder",
+              "metrics": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Overall Application Performance",
+          "type": "folder",
+          "metrics": [
+            {
+              "name": "Number of Slow End to End Messages",
+              "type": "leaf"
+            },
+            {
+              "name": "Number of Slow Calls",
+              "type": "leaf"
+            },
+            {
+              "name": "Number of Very Slow Calls",
+              "type": "leaf"
+            },
+            {
+              "name": "Stall Count",
+              "type": "leaf"
+            },
+            {
+              "name": "Average End to End Latency (ms)",
+              "type": "leaf"
+            },
+            {
+              "name": "Average Response Time (ms)",
+              "type": "leaf"
+            },
+            {
+              "name": "Errors per Minute",
+              "type": "leaf"
+            },
+            {
+              "name": "Calls per Minute",
+              "type": "leaf"
+            },
+            {
+              "name": "End to End Messages per Minute",
+              "type": "leaf"
+            },
+            {
+              "name": "Normal Average Response Time (ms)",
+              "type": "leaf"
+            },
+            {
+              "name": "Infrastructure Errors per Minute",
+              "type": "leaf"
+            },
+            {
+              "name": "Tier1",
+              "type": "folder",
+              "metrics": [
+                {
+                  "name": "Average Response Time (ms)",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Stall Count",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Number of Slow Calls",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Infrastructure Errors per Minute",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Number of Very Slow Calls",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Errors per Minute",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Calls per Minute",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Error Page Redirects per Minute",
+                  "type": "leaf"
+                },
+                {
+                  "name": "HTTP Error Codes per Minute",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Exceptions per Minute",
+                  "type": "leaf"
+                },
+                {
+                  "name": "Individual Nodes",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "Application",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Average Response Time (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Stall Count",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Slow Calls",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Infrastructure Errors per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Very Slow Calls",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Errors per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Calls per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Error Page Redirects per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "HTTP Error Codes per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Exceptions per Minute",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Machine",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Average Response Time (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Stall Count",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Slow Calls",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Infrastructure Errors per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Very Slow Calls",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Errors per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Calls per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Error Page Redirects per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "HTTP Error Codes per Minute",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Exceptions per Minute",
+                          "type": "leaf"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Error Page Redirects per Minute",
+              "type": "leaf"
+            },
+            {
+              "name": "HTTP Error Codes per Minute",
+              "type": "leaf"
+            },
+            {
+              "name": "Exceptions per Minute",
+              "type": "leaf"
+            }
+          ]
+        },
+        {
+          "name": "Information Points",
+          "type": "folder",
+          "metrics": [
+
+          ]
+        },
+        {
+          "name": "Backends",
+          "type": "folder",
+          "metrics": [
+
+          ]
+        },
+        {
+          "name": "Application Infrastructure Performance",
+          "type": "folder",
+          "metrics": [
+            {
+              "name": "Tier1",
+              "type": "folder",
+              "metrics": [
+                {
+                  "name": "JVM",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "Threads",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Current No. of Threads",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Memory",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Non-Heap",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Committed (MB)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Current Usage (MB)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Max Available (MB)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Used %",
+                              "type": "leaf"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Heap",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Committed (MB)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Current Usage (MB)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Max Available (MB)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Used %",
+                              "type": "leaf"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Classes",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Current Loaded Class Count",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Total Classes Loaded",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Garbage Collection",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "GC Time Spent Per Min (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Major Collection Time Spent Per Min (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Minor Collection Time Spent Per Min (ms)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Major Collections Per Min",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Number of Minor Collections Per Min",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Memory Pools",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Eden Space",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Current Usage (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Committed (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Max Available (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Perm Gen",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Committed (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Max Available (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Current Usage (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Survivor Space",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Current Usage (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Max Available (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Committed (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Tenured Gen",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Max Available (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Current Usage (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Committed (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Code Cache",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Max Available (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Current Usage (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Committed (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Process CPU Burnt (ms/min)",
+                      "type": "leaf"
+                    },
+                    {
+                      "name": "Process CPU Usage %",
+                      "type": "leaf"
+                    }
+                  ]
+                },
+                {
+                  "name": "Hardware Resources",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "Memory",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Free %",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Free (MB)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Total (MB)",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Used %",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Used (MB)",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Network",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Incoming KB/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Incoming packets/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Outgoing KB/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Outgoing packets/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "eth0",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Incoming KB/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Outgoing packets/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Incoming packets",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Outgoing KB",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Outgoing packets",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Incoming KB",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Incoming packets/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Outgoing KB/sec",
+                              "type": "leaf"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Outgoing packets",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Outgoing KB",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Incoming packets",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Incoming KB",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CPU",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "%Busy",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "%Idle",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "%Stolen",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Disks",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "KB read/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "KB written/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Reads/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Writes/sec",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "dev-xvda1",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Space Used",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Space Available",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "KB written/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Avg Queue Time (ms)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "% CPU Time",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Writes/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "KB read/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Reads/sec",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Avg Service Time (ms)",
+                              "type": "leaf"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Agent",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "TopSummaryStats Upload",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Invalid TopSummaryStats",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "TopSummaryStats Exceeding Limit",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "TopSummaryStats Time skew Errors",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "TopSummaryStats uploaded",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Discovered Backends",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Registration Failed",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Registration Successful",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Unmonitored Calls per Minute",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Machine",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Availability",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ConfigChannel",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Number Of Application Infrastructure Changes Sent",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "App",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Availability",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Snapshot Upload",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Invalid Snapshots",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Snapshots Exceeding Limit",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Snapshots uploaded",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Time skew Errors",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Metric Upload",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Invalid Metrics",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Metrics uploaded",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Requests Exceeding Limit",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Requests License Errors",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Requests Time skew Errors",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Event Upload",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Events Exceeding Limit",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Events uploaded",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Time skews Errors",
+                          "type": "leaf"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Business Transactions",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Registration Failed",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Registration Successful",
+                          "type": "leaf"
+                        },
+                        {
+                          "name": "Unmonitored Calls per Minute",
+                          "type": "leaf"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Individual Nodes",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "Application",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "JVM",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Threads",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Current No. of Threads",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Memory",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Non-Heap",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Committed (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Current Usage (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Max Available (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Used %",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Heap",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Committed (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Current Usage (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Max Available (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Used %",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Classes",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Current Loaded Class Count",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Total Classes Loaded",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Garbage Collection",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "GC Time Spent Per Min (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Major Collection Time Spent Per Min (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Minor Collection Time Spent Per Min (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Major Collections Per Min",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Minor Collections Per Min",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Memory Pools",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Eden Space",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Perm Gen",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Survivor Space",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Tenured Gen",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Code Cache",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Process CPU Burnt (ms/min)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Process CPU Usage %",
+                              "type": "leaf"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Hardware Resources",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Memory",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Free %",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Free (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Total (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Used %",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Used (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Network",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Incoming KB/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Incoming packets/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Outgoing KB/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Outgoing packets/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "eth0",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Incoming KB/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing packets/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Incoming packets",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing KB",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing packets",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Incoming KB",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Incoming packets/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing KB/sec",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Outgoing packets",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Outgoing KB",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Incoming packets",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Incoming KB",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "CPU",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "%Busy",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "%Idle",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "%Stolen",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Disks",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "KB read/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "KB written/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Reads/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Writes/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "dev-xvda1",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Space Used",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Space Available",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "KB written/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Avg Queue Time (ms)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "% CPU Time",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Writes/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "KB read/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Reads/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Avg Service Time (ms)",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Agent",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "TopSummaryStats Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Invalid TopSummaryStats",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "TopSummaryStats Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "TopSummaryStats Time skew Errors",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "TopSummaryStats uploaded",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Discovered Backends",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Registration Failed",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Registration Successful",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Unmonitored Calls per Minute",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Machine",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Availability",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ConfigChannel",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Number Of Application Infrastructure Changes Sent",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "App",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Availability",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Snapshot Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Invalid Snapshots",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Snapshots Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Snapshots uploaded",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Time skew Errors",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Metric Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Invalid Metrics",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Metrics uploaded",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Requests Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Requests License Errors",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Requests Time skew Errors",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Event Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Events Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Events uploaded",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Time skews Errors",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Business Transactions",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Registration Failed",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Registration Successful",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Unmonitored Calls per Minute",
+                                  "type": "leaf"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Machine",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "JVM",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Threads",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Current No. of Threads",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Memory",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Non-Heap",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Committed (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Current Usage (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Max Available (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Used %",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Heap",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Committed (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Current Usage (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Max Available (MB)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Used %",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Classes",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Current Loaded Class Count",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Total Classes Loaded",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Garbage Collection",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "GC Time Spent Per Min (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Major Collection Time Spent Per Min (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Minor Collection Time Spent Per Min (ms)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Major Collections Per Min",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Number of Minor Collections Per Min",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Memory Pools",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Eden Space",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Perm Gen",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Survivor Space",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Tenured Gen",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Code Cache",
+                                      "type": "folder",
+                                      "metrics": [
+                                        {
+                                          "name": "Max Available (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Current Usage (MB)",
+                                          "type": "leaf"
+                                        },
+                                        {
+                                          "name": "Committed (MB)",
+                                          "type": "leaf"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Process CPU Burnt (ms/min)",
+                              "type": "leaf"
+                            },
+                            {
+                              "name": "Process CPU Usage %",
+                              "type": "leaf"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Hardware Resources",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Memory",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Free %",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Free (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Total (MB)",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Used %",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Used (MB)",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Network",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Incoming KB/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Incoming packets/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Outgoing KB/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Outgoing packets/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "eth0",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Incoming KB/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing packets/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Incoming packets",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing KB",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing packets",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Incoming KB",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Incoming packets/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Outgoing KB/sec",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Outgoing packets",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Outgoing KB",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Incoming packets",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Incoming KB",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "CPU",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "%Busy",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "%Idle",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "%Stolen",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Disks",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "KB read/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "KB written/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Reads/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Writes/sec",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "dev-xvda1",
+                                  "type": "folder",
+                                  "metrics": [
+                                    {
+                                      "name": "Space Used",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Space Available",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "KB written/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Avg Queue Time (ms)",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "% CPU Time",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Writes/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "KB read/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Reads/sec",
+                                      "type": "leaf"
+                                    },
+                                    {
+                                      "name": "Avg Service Time (ms)",
+                                      "type": "leaf"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Agent",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "TopSummaryStats Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Invalid TopSummaryStats",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "TopSummaryStats Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "TopSummaryStats Time skew Errors",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "TopSummaryStats uploaded",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Discovered Backends",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Registration Failed",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Registration Successful",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Unmonitored Calls per Minute",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Machine",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Availability",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ConfigChannel",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Number Of Application Infrastructure Changes Sent",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "App",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Availability",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Snapshot Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Invalid Snapshots",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Snapshots Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Snapshots uploaded",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Time skew Errors",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Metric Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Invalid Metrics",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Metrics uploaded",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Requests Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Requests License Errors",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Requests Time skew Errors",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Event Upload",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Events Exceeding Limit",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Events uploaded",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Time skews Errors",
+                                  "type": "leaf"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Business Transactions",
+                              "type": "folder",
+                              "metrics": [
+                                {
+                                  "name": "Registration Failed",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Registration Successful",
+                                  "type": "leaf"
+                                },
+                                {
+                                  "name": "Unmonitored Calls per Minute",
+                                  "type": "leaf"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Errors",
+          "type": "folder",
+          "metrics": [
+            {
+              "name": "Tier1",
+              "type": "folder",
+              "metrics": [
+                {
+                  "name": "Page Not Found : 404",
+                  "type": "folder",
+                  "metrics": [
+                    {
+                      "name": "Errors per Minute",
+                      "type": "leaf"
+                    },
+                    {
+                      "name": "Individual Nodes",
+                      "type": "folder",
+                      "metrics": [
+                        {
+                          "name": "Application",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Errors per Minute",
+                              "type": "leaf"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Machine",
+                          "type": "folder",
+                          "metrics": [
+                            {
+                              "name": "Errors per Minute",
+                              "type": "leaf"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tiers": [
+        {
+          "id": 4570,
+          "agentType": "APP_AGENT",
+          "description": "",
+          "name": "Tier1",
+          "numberOfNodes": 2,
+          "type": "Application Server"
+        }
+      ]
+    }
+  ]
+}

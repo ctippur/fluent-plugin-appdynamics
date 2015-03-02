@@ -1,0 +1,2592 @@
+--- &70255842771900 !ruby/object:Appdynamics::Controller
+host_name: blitzio.saas.appdynamics.com
+account_name: blitzio
+user_name: blitzio
+password: 5729f1258dca
+base_uri: http://blitzio.saas.appdynamics.com/controller/rest
+auth:
+  :username: blitzio@blitzio
+  :password: 5729f1258dca
+applications:
+- &70255833595180 !ruby/object:Appdynamics::Application
+  controller: *70255842771900
+  application_name: BlitzAppDynamicsServer
+  application_id: 1049
+  nodes:
+  - !ruby/object:Appdynamics::Node
+    controller: *70255842771900
+    application: *70255833595180
+    appAgentPresent: false
+    appAgentVersion: ''
+    id: 99190
+    ipAddresses:
+      ipAddresses:
+      - 10.190.239.43
+    machineAgentPresent: true
+    machineAgentVersion: Machine Agent v3.7.12.0 GA Build Date 2013-11-25 16:20:05
+    machineId: 28259
+    machineName: ip-10-190-239-43
+    machineOSType: Linux
+    name: Machine
+    nodeUniqueLocalId: ''
+    tierId: 4570
+    tierName: Tier1
+    type: Other
+  - !ruby/object:Appdynamics::Node
+    controller: *70255842771900
+    application: *70255833595180
+    appAgentPresent: true
+    appAgentVersion: ! 'Server Agent v3.7.12.0 GA #2013-11-25_16-18-41 r${env.SVN_REVISION}
+      587-3.7.12'
+    id: 99208
+    ipAddresses:
+      ipAddresses:
+      - 10.190.239.43
+    machineAgentPresent: false
+    machineAgentVersion: ''
+    machineId: 28273
+    machineName: ip-10-190-239-43.ec2.internal
+    machineOSType: Linux
+    name: Application
+    nodeUniqueLocalId: ''
+    tierId: 4570
+    tierName: Tier1
+    type: Other
+  tiers:
+  - !ruby/object:Appdynamics::Tier
+    application: *70255833595180
+    controller: *70255842771900
+    agentType: APP_AGENT
+    description: ''
+    id: 4570
+    name: Tier1
+    numberOfNodes: 2
+    type: Application Server
+  metrics:
+  - !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: End User Experience
+    type: folder
+    metrics: []
+  - &70255842659500 !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: Business Transaction Performance
+    type: folder
+    metrics:
+    - &70255842757880 !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659500
+      name: Business Transactions
+      type: folder
+      metrics:
+      - &70255842800960 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255842757880
+        name: Tier1
+        type: folder
+        metrics:
+        - &70255842864060 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255842800960
+          name: /RESTfulDemoApplication/user-management
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Average Response Time (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Calls per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Errors per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Number of Slow Calls
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Number of Very Slow Calls
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Stall Count
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Average CPU Used (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Average Block Time (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Average Wait Time (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Normal Average Response Time (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Average Request Size
+            type: leaf
+          - &70255842918400 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842864060
+            name: Individual Nodes
+            type: folder
+            metrics:
+            - &70255842967120 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842918400
+              name: Application
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Average Response Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Calls per Minute
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Errors per Minute
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Number of Slow Calls
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Number of Very Slow Calls
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Stall Count
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Average CPU Used (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Average Block Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Average Wait Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Normal Average Response Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842967120
+                name: Average Request Size
+                type: leaf
+            - &70255842966980 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842918400
+              name: Machine
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Average Response Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Calls per Minute
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Errors per Minute
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Number of Slow Calls
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Number of Very Slow Calls
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Stall Count
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Average CPU Used (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Average Block Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Average Wait Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Normal Average Response Time (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842966980
+                name: Average Request Size
+                type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659500
+      name: Business Transaction Groups
+      type: folder
+      metrics: []
+  - &70255842659200 !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: Overall Application Performance
+    type: folder
+    metrics:
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Number of Slow End to End Messages
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Number of Slow Calls
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Number of Very Slow Calls
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Stall Count
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Average End to End Latency (ms)
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Average Response Time (ms)
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Errors per Minute
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Calls per Minute
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: End to End Messages per Minute
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Normal Average Response Time (ms)
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Infrastructure Errors per Minute
+      type: leaf
+    - &70255843181820 !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Tier1
+      type: folder
+      metrics:
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Average Response Time (ms)
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Stall Count
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Number of Slow Calls
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Infrastructure Errors per Minute
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Number of Very Slow Calls
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Errors per Minute
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Calls per Minute
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Error Page Redirects per Minute
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: HTTP Error Codes per Minute
+        type: leaf
+      - !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Exceptions per Minute
+        type: leaf
+      - &70255843224740 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843181820
+        name: Individual Nodes
+        type: folder
+        metrics:
+        - &70255843261700 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843224740
+          name: Application
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Average Response Time (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Stall Count
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Number of Slow Calls
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Infrastructure Errors per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Number of Very Slow Calls
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Errors per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Calls per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Error Page Redirects per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: HTTP Error Codes per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261700
+            name: Exceptions per Minute
+            type: leaf
+        - &70255843261480 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843224740
+          name: Machine
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Average Response Time (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Stall Count
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Number of Slow Calls
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Infrastructure Errors per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Number of Very Slow Calls
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Errors per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Calls per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Error Page Redirects per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: HTTP Error Codes per Minute
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843261480
+            name: Exceptions per Minute
+            type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Error Page Redirects per Minute
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: HTTP Error Codes per Minute
+      type: leaf
+    - !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842659200
+      name: Exceptions per Minute
+      type: leaf
+  - !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: Information Points
+    type: folder
+    metrics: []
+  - !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: Backends
+    type: folder
+    metrics: []
+  - &70255842658140 !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: Application Infrastructure Performance
+    type: folder
+    metrics:
+    - &70255843117700 !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842658140
+      name: Tier1
+      type: folder
+      metrics:
+      - &70255843059780 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843117700
+        name: JVM
+        type: folder
+        metrics:
+        - &70255843002420 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059780
+          name: Threads
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002420
+            name: Current No. of Threads
+            type: leaf
+        - &70255843002300 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059780
+          name: Memory
+          type: folder
+          metrics:
+          - &70255842906440 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002300
+            name: Non-Heap
+            type: folder
+            metrics:
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842906440
+              name: Committed (MB)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842906440
+              name: Current Usage (MB)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842906440
+              name: Max Available (MB)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842906440
+              name: Used %
+              type: leaf
+          - &70255842905960 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002300
+            name: Heap
+            type: folder
+            metrics:
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842905960
+              name: Committed (MB)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842905960
+              name: Current Usage (MB)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842905960
+              name: Max Available (MB)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842905960
+              name: Used %
+              type: leaf
+        - &70255843002140 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059780
+          name: Classes
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002140
+            name: Current Loaded Class Count
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002140
+            name: Total Classes Loaded
+            type: leaf
+        - &70255843002020 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059780
+          name: Garbage Collection
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002020
+            name: GC Time Spent Per Min (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002020
+            name: Major Collection Time Spent Per Min (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002020
+            name: Minor Collection Time Spent Per Min (ms)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002020
+            name: Number of Major Collections Per Min
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002020
+            name: Number of Minor Collections Per Min
+            type: leaf
+          - &70255842694560 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843002020
+            name: Memory Pools
+            type: folder
+            metrics:
+            - &70255842634820 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842694560
+              name: Eden Space
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634820
+                name: Current Usage (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634820
+                name: Committed (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634820
+                name: Max Available (MB)
+                type: leaf
+            - &70255842634660 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842694560
+              name: Perm Gen
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634660
+                name: Committed (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634660
+                name: Max Available (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634660
+                name: Current Usage (MB)
+                type: leaf
+            - &70255842634480 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842694560
+              name: Survivor Space
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634480
+                name: Current Usage (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634480
+                name: Max Available (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634480
+                name: Committed (MB)
+                type: leaf
+            - &70255842634360 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842694560
+              name: Tenured Gen
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634360
+                name: Max Available (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634360
+                name: Current Usage (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634360
+                name: Committed (MB)
+                type: leaf
+            - &70255842634200 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842694560
+              name: Code Cache
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634200
+                name: Max Available (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634200
+                name: Current Usage (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842634200
+                name: Committed (MB)
+                type: leaf
+        - !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059780
+          name: Process CPU Burnt (ms/min)
+          type: leaf
+        - !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059780
+          name: Process CPU Usage %
+          type: leaf
+      - &70255843059460 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843117700
+        name: Hardware Resources
+        type: folder
+        metrics:
+        - &70255842035080 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059460
+          name: Memory
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842035080
+            name: Free %
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842035080
+            name: Free (MB)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842035080
+            name: Total (MB)
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842035080
+            name: Used %
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842035080
+            name: Used (MB)
+            type: leaf
+        - &70255842034480 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059460
+          name: Network
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Incoming KB/sec
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Incoming packets/sec
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Outgoing KB/sec
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Outgoing packets/sec
+            type: leaf
+          - &70255834427500 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: eth0
+            type: folder
+            metrics:
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Incoming KB/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Outgoing packets/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Incoming packets
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Outgoing KB
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Outgoing packets
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Incoming KB
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Incoming packets/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255834427500
+              name: Outgoing KB/sec
+              type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Outgoing packets
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Outgoing KB
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Incoming packets
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034480
+            name: Incoming KB
+            type: leaf
+        - &70255842034120 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059460
+          name: CPU
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034120
+            name: ! '%Busy'
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034120
+            name: ! '%Idle'
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842034120
+            name: ! '%Stolen'
+            type: leaf
+        - &70255842033400 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059460
+          name: Disks
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842033400
+            name: KB read/sec
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842033400
+            name: KB written/sec
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842033400
+            name: Reads/sec
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842033400
+            name: Writes/sec
+            type: leaf
+          - &70255825194560 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842033400
+            name: dev-xvda1
+            type: folder
+            metrics:
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: Space Used
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: Space Available
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: KB written/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: Avg Queue Time (ms)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: ! '% CPU Time'
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: Writes/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: KB read/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: Reads/sec
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255825194560
+              name: Avg Service Time (ms)
+              type: leaf
+      - &70255843059240 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843117700
+        name: Agent
+        type: folder
+        metrics:
+        - &70255843218900 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: TopSummaryStats Upload
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218900
+            name: Invalid TopSummaryStats
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218900
+            name: TopSummaryStats Exceeding Limit
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218900
+            name: TopSummaryStats Time skew Errors
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218900
+            name: TopSummaryStats uploaded
+            type: leaf
+        - &70255843218740 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: Discovered Backends
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218740
+            name: Registration Failed
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218740
+            name: Registration Successful
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218740
+            name: Unmonitored Calls per Minute
+            type: leaf
+        - &70255843218540 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: Machine
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218540
+            name: Availability
+            type: leaf
+        - &70255843218340 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: ConfigChannel
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218340
+            name: Number Of Application Infrastructure Changes Sent
+            type: leaf
+        - &70255843218160 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: App
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843218160
+            name: Availability
+            type: leaf
+        - &70255843217840 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: Snapshot Upload
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217840
+            name: Invalid Snapshots
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217840
+            name: Snapshots Exceeding Limit
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217840
+            name: Snapshots uploaded
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217840
+            name: Time skew Errors
+            type: leaf
+        - &70255843217680 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: Metric Upload
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217680
+            name: Invalid Metrics
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217680
+            name: Metrics uploaded
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217680
+            name: Requests Exceeding Limit
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217680
+            name: Requests License Errors
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217680
+            name: Requests Time skew Errors
+            type: leaf
+        - &70255843217520 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: Event Upload
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217520
+            name: Events Exceeding Limit
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217520
+            name: Events uploaded
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217520
+            name: Time skews Errors
+            type: leaf
+        - &70255843217280 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843059240
+          name: Business Transactions
+          type: folder
+          metrics:
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217280
+            name: Registration Failed
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217280
+            name: Registration Successful
+            type: leaf
+          - !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255843217280
+            name: Unmonitored Calls per Minute
+            type: leaf
+      - &70255843058880 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255843117700
+        name: Individual Nodes
+        type: folder
+        metrics:
+        - &70255825605540 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843058880
+          name: Application
+          type: folder
+          metrics:
+          - &70255833701340 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255825605540
+            name: JVM
+            type: folder
+            metrics:
+            - &70255834373540 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833701340
+              name: Threads
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834373540
+                name: Current No. of Threads
+                type: leaf
+            - &70255834372960 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833701340
+              name: Memory
+              type: folder
+              metrics:
+              - &70255841937660 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834372960
+                name: Non-Heap
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841937660
+                  name: Committed (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841937660
+                  name: Current Usage (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841937660
+                  name: Max Available (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841937660
+                  name: Used %
+                  type: leaf
+              - &70255841936180 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834372960
+                name: Heap
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841936180
+                  name: Committed (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841936180
+                  name: Current Usage (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841936180
+                  name: Max Available (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255841936180
+                  name: Used %
+                  type: leaf
+            - &70255834372380 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833701340
+              name: Classes
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834372380
+                name: Current Loaded Class Count
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834372380
+                name: Total Classes Loaded
+                type: leaf
+            - &70255834371560 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833701340
+              name: Garbage Collection
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834371560
+                name: GC Time Spent Per Min (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834371560
+                name: Major Collection Time Spent Per Min (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834371560
+                name: Minor Collection Time Spent Per Min (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834371560
+                name: Number of Major Collections Per Min
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834371560
+                name: Number of Minor Collections Per Min
+                type: leaf
+              - &70255842544760 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255834371560
+                name: Memory Pools
+                type: folder
+                metrics:
+                - &70255842588720 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842544760
+                  name: Eden Space
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588720
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588720
+                    name: Committed (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588720
+                    name: Max Available (MB)
+                    type: leaf
+                - &70255842588600 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842544760
+                  name: Perm Gen
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588600
+                    name: Committed (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588600
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588600
+                    name: Current Usage (MB)
+                    type: leaf
+                - &70255842588340 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842544760
+                  name: Survivor Space
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588340
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588340
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588340
+                    name: Committed (MB)
+                    type: leaf
+                - &70255842588040 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842544760
+                  name: Tenured Gen
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588040
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588040
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842588040
+                    name: Committed (MB)
+                    type: leaf
+                - &70255842587900 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842544760
+                  name: Code Cache
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842587900
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842587900
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842587900
+                    name: Committed (MB)
+                    type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833701340
+              name: Process CPU Burnt (ms/min)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833701340
+              name: Process CPU Usage %
+              type: leaf
+          - &70255833700380 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255825605540
+            name: Hardware Resources
+            type: folder
+            metrics:
+            - &70255842928480 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833700380
+              name: Memory
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928480
+                name: Free %
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928480
+                name: Free (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928480
+                name: Total (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928480
+                name: Used %
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928480
+                name: Used (MB)
+                type: leaf
+            - &70255842928240 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833700380
+              name: Network
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Incoming KB/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Incoming packets/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Outgoing KB/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Outgoing packets/sec
+                type: leaf
+              - &70255843044800 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: eth0
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Incoming KB/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Outgoing packets/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Incoming packets
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Outgoing KB
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Outgoing packets
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Incoming KB
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Incoming packets/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843044800
+                  name: Outgoing KB/sec
+                  type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Outgoing packets
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Outgoing KB
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Incoming packets
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842928240
+                name: Incoming KB
+                type: leaf
+            - &70255842927980 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833700380
+              name: CPU
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927980
+                name: ! '%Busy'
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927980
+                name: ! '%Idle'
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927980
+                name: ! '%Stolen'
+                type: leaf
+            - &70255842927760 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833700380
+              name: Disks
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927760
+                name: KB read/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927760
+                name: KB written/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927760
+                name: Reads/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927760
+                name: Writes/sec
+                type: leaf
+              - &70255843208000 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842927760
+                name: dev-xvda1
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: Space Used
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: Space Available
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: KB written/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: Avg Queue Time (ms)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: ! '% CPU Time'
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: Writes/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: KB read/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: Reads/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843208000
+                  name: Avg Service Time (ms)
+                  type: leaf
+          - &70255833698380 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255825605540
+            name: Agent
+            type: folder
+            metrics:
+            - &70255843304160 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: TopSummaryStats Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843304160
+                name: Invalid TopSummaryStats
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843304160
+                name: TopSummaryStats Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843304160
+                name: TopSummaryStats Time skew Errors
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843304160
+                name: TopSummaryStats uploaded
+                type: leaf
+            - &70255843303920 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: Discovered Backends
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303920
+                name: Registration Failed
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303920
+                name: Registration Successful
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303920
+                name: Unmonitored Calls per Minute
+                type: leaf
+            - &70255843303740 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: Machine
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303740
+                name: Availability
+                type: leaf
+            - &70255843303540 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: ConfigChannel
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303540
+                name: Number Of Application Infrastructure Changes Sent
+                type: leaf
+            - &70255843303340 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: App
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303340
+                name: Availability
+                type: leaf
+            - &70255843303140 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: Snapshot Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303140
+                name: Invalid Snapshots
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303140
+                name: Snapshots Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303140
+                name: Snapshots uploaded
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843303140
+                name: Time skew Errors
+                type: leaf
+            - &70255843302960 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: Metric Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302960
+                name: Invalid Metrics
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302960
+                name: Metrics uploaded
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302960
+                name: Requests Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302960
+                name: Requests License Errors
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302960
+                name: Requests Time skew Errors
+                type: leaf
+            - &70255843302760 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: Event Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302760
+                name: Events Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302760
+                name: Events uploaded
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302760
+                name: Time skews Errors
+                type: leaf
+            - &70255843302560 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255833698380
+              name: Business Transactions
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302560
+                name: Registration Failed
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302560
+                name: Registration Successful
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843302560
+                name: Unmonitored Calls per Minute
+                type: leaf
+        - &70255825603540 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255843058880
+          name: Machine
+          type: folder
+          metrics:
+          - &70255842787240 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255825603540
+            name: JVM
+            type: folder
+            metrics:
+            - &70255842731840 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842787240
+              name: Threads
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731840
+                name: Current No. of Threads
+                type: leaf
+            - &70255842731680 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842787240
+              name: Memory
+              type: folder
+              metrics:
+              - &70255842627500 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731680
+                name: Non-Heap
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627500
+                  name: Committed (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627500
+                  name: Current Usage (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627500
+                  name: Max Available (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627500
+                  name: Used %
+                  type: leaf
+              - &70255842627360 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731680
+                name: Heap
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627360
+                  name: Committed (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627360
+                  name: Current Usage (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627360
+                  name: Max Available (MB)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842627360
+                  name: Used %
+                  type: leaf
+            - &70255842731540 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842787240
+              name: Classes
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731540
+                name: Current Loaded Class Count
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731540
+                name: Total Classes Loaded
+                type: leaf
+            - &70255842731380 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842787240
+              name: Garbage Collection
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731380
+                name: GC Time Spent Per Min (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731380
+                name: Major Collection Time Spent Per Min (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731380
+                name: Minor Collection Time Spent Per Min (ms)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731380
+                name: Number of Major Collections Per Min
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731380
+                name: Number of Minor Collections Per Min
+                type: leaf
+              - &70255842298780 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842731380
+                name: Memory Pools
+                type: folder
+                metrics:
+                - &70255842207220 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842298780
+                  name: Eden Space
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842207220
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842207220
+                    name: Committed (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842207220
+                    name: Max Available (MB)
+                    type: leaf
+                - &70255842207100 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842298780
+                  name: Perm Gen
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842207100
+                    name: Committed (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842207100
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842207100
+                    name: Current Usage (MB)
+                    type: leaf
+                - &70255842206960 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842298780
+                  name: Survivor Space
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206960
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206960
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206960
+                    name: Committed (MB)
+                    type: leaf
+                - &70255842206820 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842298780
+                  name: Tenured Gen
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206820
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206820
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206820
+                    name: Committed (MB)
+                    type: leaf
+                - &70255842206680 !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842298780
+                  name: Code Cache
+                  type: folder
+                  metrics:
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206680
+                    name: Max Available (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206680
+                    name: Current Usage (MB)
+                    type: leaf
+                  - !ruby/object:Appdynamics::Metric
+                    controller: *70255842771900
+                    parent: *70255842206680
+                    name: Committed (MB)
+                    type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842787240
+              name: Process CPU Burnt (ms/min)
+              type: leaf
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842787240
+              name: Process CPU Usage %
+              type: leaf
+          - &70255842786620 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255825603540
+            name: Hardware Resources
+            type: folder
+            metrics:
+            - &70255843269460 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786620
+              name: Memory
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269460
+                name: Free %
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269460
+                name: Free (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269460
+                name: Total (MB)
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269460
+                name: Used %
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269460
+                name: Used (MB)
+                type: leaf
+            - &70255843269200 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786620
+              name: Network
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Incoming KB/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Incoming packets/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Outgoing KB/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Outgoing packets/sec
+                type: leaf
+              - &70255843173360 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: eth0
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Incoming KB/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Outgoing packets/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Incoming packets
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Outgoing KB
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Outgoing packets
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Incoming KB
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Incoming packets/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255843173360
+                  name: Outgoing KB/sec
+                  type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Outgoing packets
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Outgoing KB
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Incoming packets
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843269200
+                name: Incoming KB
+                type: leaf
+            - &70255843268960 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786620
+              name: CPU
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268960
+                name: ! '%Busy'
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268960
+                name: ! '%Idle'
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268960
+                name: ! '%Stolen'
+                type: leaf
+            - &70255843268720 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786620
+              name: Disks
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268720
+                name: KB read/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268720
+                name: KB written/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268720
+                name: Reads/sec
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268720
+                name: Writes/sec
+                type: leaf
+              - &70255842987500 !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255843268720
+                name: dev-xvda1
+                type: folder
+                metrics:
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: Space Used
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: Space Available
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: KB written/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: Avg Queue Time (ms)
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: ! '% CPU Time'
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: Writes/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: KB read/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: Reads/sec
+                  type: leaf
+                - !ruby/object:Appdynamics::Metric
+                  controller: *70255842771900
+                  parent: *70255842987500
+                  name: Avg Service Time (ms)
+                  type: leaf
+          - &70255842786360 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255825603540
+            name: Agent
+            type: folder
+            metrics:
+            - &70255842881400 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: TopSummaryStats Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881400
+                name: Invalid TopSummaryStats
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881400
+                name: TopSummaryStats Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881400
+                name: TopSummaryStats Time skew Errors
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881400
+                name: TopSummaryStats uploaded
+                type: leaf
+            - &70255842881240 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: Discovered Backends
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881240
+                name: Registration Failed
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881240
+                name: Registration Successful
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881240
+                name: Unmonitored Calls per Minute
+                type: leaf
+            - &70255842881060 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: Machine
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842881060
+                name: Availability
+                type: leaf
+            - &70255842880820 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: ConfigChannel
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842880820
+                name: Number Of Application Infrastructure Changes Sent
+                type: leaf
+            - &70255842880640 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: App
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842880640
+                name: Availability
+                type: leaf
+            - &70255842880240 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: Snapshot Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842880240
+                name: Invalid Snapshots
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842880240
+                name: Snapshots Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842880240
+                name: Snapshots uploaded
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842880240
+                name: Time skew Errors
+                type: leaf
+            - &70255842879880 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: Metric Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879880
+                name: Invalid Metrics
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879880
+                name: Metrics uploaded
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879880
+                name: Requests Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879880
+                name: Requests License Errors
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879880
+                name: Requests Time skew Errors
+                type: leaf
+            - &70255842879720 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: Event Upload
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879720
+                name: Events Exceeding Limit
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879720
+                name: Events uploaded
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879720
+                name: Time skews Errors
+                type: leaf
+            - &70255842879440 !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842786360
+              name: Business Transactions
+              type: folder
+              metrics:
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879440
+                name: Registration Failed
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879440
+                name: Registration Successful
+                type: leaf
+              - !ruby/object:Appdynamics::Metric
+                controller: *70255842771900
+                parent: *70255842879440
+                name: Unmonitored Calls per Minute
+                type: leaf
+  - &70255842657920 !ruby/object:Appdynamics::Metric
+    controller: *70255842771900
+    parent: *70255833595180
+    name: Errors
+    type: folder
+    metrics:
+    - &70255842574680 !ruby/object:Appdynamics::Metric
+      controller: *70255842771900
+      parent: *70255842657920
+      name: Tier1
+      type: folder
+      metrics:
+      - &70255842617580 !ruby/object:Appdynamics::Metric
+        controller: *70255842771900
+        parent: *70255842574680
+        name: ! 'Page Not Found : 404'
+        type: folder
+        metrics:
+        - !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255842617580
+          name: Errors per Minute
+          type: leaf
+        - &70255842656600 !ruby/object:Appdynamics::Metric
+          controller: *70255842771900
+          parent: *70255842617580
+          name: Individual Nodes
+          type: folder
+          metrics:
+          - &70255842712760 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842656600
+            name: Application
+            type: folder
+            metrics:
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842712760
+              name: Errors per Minute
+              type: leaf
+          - &70255842712600 !ruby/object:Appdynamics::Metric
+            controller: *70255842771900
+            parent: *70255842656600
+            name: Machine
+            type: folder
+            metrics:
+            - !ruby/object:Appdynamics::Metric
+              controller: *70255842771900
+              parent: *70255842712600
+              name: Errors per Minute
+              type: leaf

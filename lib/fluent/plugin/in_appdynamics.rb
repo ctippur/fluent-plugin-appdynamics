@@ -18,6 +18,12 @@ module Fluent
       require 'json'
       require 'daemons'
       require 'pp'
+      require 'httparty'
+      require 'appdynamics/controller'
+      require 'appdynamics/application'
+      require 'appdynamics/node'
+      require 'appdynamics/tier'
+      require 'appdynamics/metric'
       # Add any other dependencies
     end # def initialize
 

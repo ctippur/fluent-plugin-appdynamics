@@ -1,0 +1,16 @@
+{
+    "id": 99190,
+    "name": "Machine",
+    "type": "Other",
+    "tierId": 4570,
+    "tierName": "Tier1",
+    "machineId": 28259,
+    "machineName": "ip-10-190-239-43",
+    "machineOSType": "Linux",
+    "ipAddresses": null,
+    "machineAgentPresent": true,
+    "machineAgentVersion": "Machine Agent v3.7.12.0 GA Build Date 2013-11-25 16:20:05",
+    "appAgentPresent": false,
+    "appAgentVersion": "",
+    "nodeUniqueLocalId": ""
+}
