@@ -1,8 +1,0 @@
-{
-    "id": 4570,
-    "agentType": "APP_AGENT",
-    "description": "",
-    "name": "Tier1",
-    "numberOfNodes": 2,
-    "type": "Application Server"
-}
