@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = 'https://github.com/Bigel0w/fluent-plugin-appdynamics'
   gem.license       = 'MIT'
 
-  gem.files         = README.split($\)
+  gem.files         = `git ls-files`.split($\)
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.require_paths = ["lib"]
@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   # For Example: gem.add_development_dependency "rake", '~> 0.9', '>= 0.9.6'
   gem.add_runtime_dependency "fluentd", '~> 0.10', '>= 0.10.52'
   gem.add_runtime_dependency "json", '~> 1.1', '>= 1.8.2'
-  gem.add_runtime_dependency "rest_client", '~> 1.1', '>= 1.8.3'
+  gem.add_runtime_dependency "rest-client", '~> 1.7', '>= 1.7.3'
 end
