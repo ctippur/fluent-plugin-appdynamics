@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-appdynamics"
-  gem.version       = "0.0.1"
+  gem.version       = "0.0.2"
   gem.date          = '2015-03-02'
   gem.authors       = ["chandrashekar Tippur"]
   gem.email         = ["ctippur@gmail.com"]
   gem.summary       = %q{Fluentd input plugin for appdynamics alerts}
   gem.description   = %q{FLuentd plugin for appdynamics alerts... WIP}
-  gem.homepage      = 'https://github.com/Bigel0w/fluent-plugin-appdynamics'
+  gem.homepage      = 'https://github.com/ctippur/fluent-plugin-appdynamics'
   gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($\)
