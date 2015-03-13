@@ -21,4 +21,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "fluentd", '~> 0.10', '>= 0.10.52'
   gem.add_runtime_dependency "json", '~> 1.1', '>= 1.8.2'
   gem.add_runtime_dependency "rest-client", '~> 1.7', '>= 1.7.3'
+  gem.add_development_dependency "rake", '~> 0.9', '>= 0.9.6'
 end

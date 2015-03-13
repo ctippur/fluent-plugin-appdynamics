@@ -37,14 +37,14 @@ module Fluent
       @conf = conf
       def appdynamicsEnd(startTime,endTime)
       	# Setup URL Resource
-	# Sample https://intuitapm2.saas.appdynamics.com/controller/rest/applications/Prod/problems/healthrule-violations?time-range-type=BETWEEN_TIMES&output=JSON&start-time=1426270552990&end-time=1426270553000
+	# Sample https://ep/controller/rest/applications/Prod/problems/healthrule-violations?time-range-type=BETWEEN_TIMES&output=JSON&start-time=1426270552990&end-time=1426270553000
 	@url = @endpoint.to_s + "problems/healthrule-violations?time-range-type=BETWEEN_TIMES&output=JSON" + "&start-time=" + startTime.to_s + "&end-time=" + endTime.to_s
 	$log.info @url
         RestClient::Resource.new(@url,@user+"@"+@account,@pass)
       end
       def appdynamicsEntEnd(entityId)
 		# Setup URL Resource
-		# Sample https://intuitapm2.saas.appdynamics.com/controller/rest/applications/Prod/nodes/81376?output=JSON
+		# Sample https://ep/controller/rest/applications/Prod/nodes/81376?output=JSON
 		@urlEntity = @endpoint.to_s + "nodes/" + entityId.to_s + "?output=JSON"
 		$log.info @urlEntity
 		RestClient::Resource.new(@urlEntity,@user+"@"+@account,@pass)
