@@ -125,10 +125,16 @@ module Fluent
 			end
 			#val["TrigerredEntityName"]=bodyTrigEnt["name"]
 		end
-		#puts "#{val} => #{index}" 
 		val["event_type"] = @tag.to_s
+		val["receive_time_input"]=(Engine.now * 1000).to_s
+		#puts "#{val} => #{index}" 
 		$log.info val
-          	Engine.emit(@tag, val['startTimeInMillis'].to_i,val)
+		begin
+          		Engine.emit(@tag, val['startTimeInMillis'].to_i,val)
+		rescue Exception => e
+			$log.info e.message
+			$log.info e.backtrace.inspect
+		end
 	}
 	#pp body.class
     end # def Input
