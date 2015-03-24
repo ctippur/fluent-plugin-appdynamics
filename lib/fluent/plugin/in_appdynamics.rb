@@ -126,6 +126,7 @@ module Fluent
 			#val["TrigerredEntityName"]=bodyTrigEnt["name"]
 		end
 		#puts "#{val} => #{index}" 
+		val["event_type"] = @tag.to_s
 		$log.info val
           	Engine.emit(@tag, val['startTimeInMillis'].to_i,val)
 	}
