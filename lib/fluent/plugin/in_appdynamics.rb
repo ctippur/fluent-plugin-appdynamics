@@ -238,7 +238,7 @@ module Fluent
           #$log.info "Spectrum :: Got time record from initial config - #{alertStart}"
         end
         
-	$log.info "appdynamics :: Polling alerts for time period: #{alertStart.to_i} - #{(alertEnd.to_i}"
+	$log.info "appdynamics :: Polling alerts for time period: #{alertStart.to_i} - #{alertEnd.to_i}"
 	# Post to Appdynamics and parse results  
 
 	begin
