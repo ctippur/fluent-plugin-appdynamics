@@ -234,7 +234,7 @@ module Fluent
           alertStart = @state_store.last_records(@tag)
           $log.info @tag + " :: Got time record from state_store - #{alertStart}" 
         else
-          alertStart = pollingStart.to_i - @interval.to_i
+          alertStart = alertEnd.to_i - @interval.to_i
           #$log.info "Spectrum :: Got time record from initial config - #{alertStart}"
         end
         
