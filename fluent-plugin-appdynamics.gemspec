@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-appdynamics"
-  gem.version       = "0.0.5"
+  gem.version       = "0.0.6"
   gem.date          = '2015-03-02'
   gem.authors       = ["chandrashekar Tippur"]
   gem.email         = ["ctippur@gmail.com"]
